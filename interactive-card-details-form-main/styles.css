@@ -11,7 +11,7 @@ body {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  background-color:var(--White);
+  background-color: var(--White);
   font-family: "Space Grotesk", sans-serif;
 }
 .main-container {
@@ -28,26 +28,24 @@ body {
   background-image: url("images/bg-main-desktop.png");
   background-repeat: no-repeat;
 }
-.front-image{
+.front-image {
   position: absolute;
   margin-left: 4rem;
   margin-top: 3.5rem;
-  
 }
-.front-image img{
+.front-image img {
   width: 300px;
   height: fit-content;
-  content: '0000';
+  content: "0000";
   color: white;
 }
-.back-image{
+.back-image {
   position: absolute;
   bottom: 5.5rem;
   left: 3rem;
   margin-left: 5rem;
 }
-.back-image img{
-  
+.back-image img {
   width: 300px;
   height: fit-content;
 }
@@ -69,6 +67,25 @@ body {
 .right-container form {
   text-align: left;
 }
+.card-year {
+  display: flex;
+  
+  width: 150px;
+}
+.card-year input{
+  margin-right: 8px;
+  /* padding: 1px; */
+  justify-content: space-between;
+}
+.parent-card-div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+ .cvc {
+  
+  width: 110px;
+} 
 .btn {
   width: 103%;
   border-radius: 8px;
@@ -80,10 +97,9 @@ body {
   font-family: "Space Grotesk", sans-serif;
   text-transform: capitalize;
 }
-.btn:hover{
-  background-color: hsl(278, 68%, 11%,0.8);
+.btn:hover {
+  background-color: hsl(278, 68%, 11%, 0.8);
 }
-
 
 .form input {
   width: 100%;
@@ -100,19 +116,19 @@ margin-left: 12px;
   margin-right: 12px;
   margin-top: -4.5rem;
 } */
-.number{
+.number {
   display: flex;
   justify-content: space-around;
   margin-top: -4.5rem;
 }
-.name{
+.name {
   display: flex;
   font-size: 12px;
   margin-left: 8px;
   margin-right: 12px;
   justify-content: space-between;
 }
-.cvv{
+.cvv {
   position: absolute;
   color: var(--White);
   font-size: 12px;

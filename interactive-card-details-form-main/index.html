@@ -58,16 +58,41 @@
           <form class="form" style="height: 220px">
             <div class="card-name">
               <label>Cardholder Name</label>
-              <input name='CardholderName'type="text" placeholder="e.g. Jane Appleseed" value=""  />
+              <input
+                name="CardholderName"
+                type="text"
+                placeholder="e.g. Jane Appleseed"
+                value=""
+                maxlength="20"
+              />
             </div>
             <div class="card-number">
               <label> Card Number</label>
-              <input type="text" placeholder="e.g. 1234 5678 9123 0000" value="" />
+              <input
+                type="tel"
+                placeholder="e.g. 1234 5678 9123 0000"
+                value=""
+                maxlength="16"
+              />
             </div>
-            <div class="card-year">
-              <label>Exp. Date (MM/YY)</label>
-              <input type="text" placeholder="e.g. 1234 5678 9123 0000" value="" />
+            <div class="parent-card-div" style="margin-top: 8px;">
+              <div class="card-year" style="display: flex; flex-direction: column;">
+                <div>
+                  <span style="display: block;">EXP.DATE</span>
+                </div>
+                <div style="display: flex;">
+                  <input maxlength="2" type="text" value="" placeholder="MM"/>
+                  <input maxlength="2" type="text" value="" placeholder="YY"/>
+                </div>
+                
+              </div>
+              <div class="cvc">
+                <span>CVC</span>
+                <input maxlength="3" type="tel" value="" placeholder="cvc"/>
+              </div>
+
             </div>
+            
             <button class="btn" type="submit">Confirm</button>
           </form>
         </div>
@@ -88,7 +113,7 @@
         >Frontend Mentor</a
       >. Coded by <a href="#">Animesh Anand</a>.
     </div>
-   
+
     <script src="index.js"></script>
   </body>
 </html>
