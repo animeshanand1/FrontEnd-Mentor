@@ -34,24 +34,23 @@
       <div class="left-container">
         <div class="front-image">
           <img src="./images/bg-card-front.png" />
-          <div class="on-card" style="position:relative;" >
-            <div class="number">
-              <span>0000</span>
-              <span>0000</span>
-              <span>0000</span>
-              <span>0000</span>
+          <div class="on-card" style="position: relative">
+            <div class="number" id="holderNumber">
+              <span class="holder-number">0000</span>
+              <span class="holder-number">0000</span>
+              <span class="holder-number">0000</span>
+              <span class="holder-number">0000</span>
             </div>
             <div class="name">
-              <p class="name">Animesh Thakur</p>
+              <p class="name" id="holderName">Animesh Thakur</p>
               <p class="expiry">00/00</p>
             </div>
-            
           </div>
-          
         </div>
 
         <div class="back-image">
           <img src="./images/bg-card-back.png" />
+          <div class="cvv">000</div>
         </div>
       </div>
       <div class="right-container">
@@ -59,17 +58,17 @@
           <form class="form" style="height: 220px">
             <div class="card-name">
               <label>Cardholder Name</label>
-              <input type="text" placeholder="e.g. Jane Appleseed" />
+              <input name='CardholderName'type="text" placeholder="e.g. Jane Appleseed" value=""  />
             </div>
             <div class="card-number">
               <label> Card Number</label>
-              <input type="text" placeholder="e.g. 1234 5678 9123 0000" />
+              <input type="text" placeholder="e.g. 1234 5678 9123 0000" value="" />
             </div>
             <div class="card-year">
               <label>Exp. Date (MM/YY)</label>
-              <input type="text" placeholder="e.g. 1234 5678 9123 0000" />
+              <input type="text" placeholder="e.g. 1234 5678 9123 0000" value="" />
             </div>
-            <button class="btn">Confirm</button>
+            <button class="btn" type="submit">Confirm</button>
           </form>
         </div>
       </div>
@@ -89,5 +88,7 @@
         >Frontend Mentor</a
       >. Coded by <a href="#">Animesh Anand</a>.
     </div>
+   
+    <script src="index.js"></script>
   </body>
 </html>

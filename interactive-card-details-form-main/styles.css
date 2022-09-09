@@ -28,9 +28,6 @@ body {
   background-image: url("images/bg-main-desktop.png");
   background-repeat: no-repeat;
 }
-/* .left-container img{
-  max-width: 110%;
-} */
 .front-image{
   position: absolute;
   margin-left: 4rem;
@@ -50,7 +47,7 @@ body {
   margin-left: 5rem;
 }
 .back-image img{
-  /* top: 9rem; */
+  
   width: 300px;
   height: fit-content;
 }
@@ -73,17 +70,26 @@ body {
   text-align: left;
 }
 .btn {
-  width: 100%;
+  width: 103%;
+  border-radius: 8px;
+  margin-top: 1.2rem;
+  padding: 5px;
   cursor: pointer;
   color: white;
   background-color: var(--Very-dark-violet);
   font-family: "Space Grotesk", sans-serif;
   text-transform: capitalize;
 }
+.btn:hover{
+  background-color: hsl(278, 68%, 11%,0.8);
+}
 
 
 .form input {
   width: 100%;
+  border-radius: 6px;
+  padding: 5px;
+  border-width: 1px;
 }
 /* .on-card .name{
 font-size: 12px;
@@ -105,4 +111,11 @@ margin-left: 12px;
   margin-left: 8px;
   margin-right: 12px;
   justify-content: space-between;
+}
+.cvv{
+  position: absolute;
+  color: var(--White);
+  font-size: 12px;
+  top: 4.6rem;
+  right: 2.2rem;
 }
