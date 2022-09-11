@@ -36,10 +36,10 @@
           <img src="./images/bg-card-front.png" />
           <div class="on-card" style="position: relative">
             <div class="number" id="holderNumber">
-              <span class="holder-number">0000</span>
-              <span class="holder-number">0000</span>
-              <span class="holder-number">0000</span>
-              <span class="holder-number">0000</span>
+              <text class="holder-number"></text>
+              <text class="holder-number"></text>
+              <text class="holder-number"></text>
+              <text class="holder-number"></text> 
             </div>
             <div class="name">
               <p class="name" id="holderName">Animesh Thakur</p>
@@ -81,14 +81,14 @@
                   <span style="display: block;">EXP.DATE</span>
                 </div>
                 <div style="display: flex;">
-                  <input maxlength="2" type="text" value="" placeholder="MM"/>
-                  <input maxlength="2" type="text" value="" placeholder="YY"/>
+                  <input id="mm" maxlength="2" type="text"  placeholder="MM"/>
+                  <input id="yy" maxlength="2" type="text"  placeholder="YY"/>
                 </div>
                 
               </div>
               <div class="cvc">
                 <span>CVC</span>
-                <input maxlength="3" type="tel" value="" placeholder="cvc"/>
+                <input id="cvcInput" maxlength="3" type="tel" placeholder="cvc"/>
               </div>
 
             </div>
